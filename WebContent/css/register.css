@@ -1,0 +1,126 @@
+#rigisBox{width:100%}
+.rigis{width:1240px; margin:0 auto}
+input{border:none;background:none;outline: 0 none}
+/*----------------------------------登录部分--------------------------------------*/
+#rigisBox{
+    background:url("../images/bigBgtp.jpg") no-repeat;
+    height:675px;
+}
+.rigis{
+    padding-left:50px;
+    padding-top:20px;
+    height:620px;
+}
+.rigis_right{
+    width:380px;
+   min-height:500px;
+    background:#f9f9f9;
+}
+.rigis_right_top,.rigis_inp_text,.phoneNUmberTrue,.rigis_img_code,
+.imgCodeTrue,.rigis_node_code,.nodeCodeTrue,.rigis_password,.rigis_saveCooike
+,.rigis_submit,.rigis_inp_Email,.rigis_inp_zhm{
+    margin-left:50px;
+}
+.rigis_right_top{
+    width:280px;
+    height:18px;
+    padding:20px 0;
+    font-size:18px;
+    line-height:18px;
+    text-align:center;
+    background:url("../images/dll.png") no-repeat center center;
+}
+.rigis_inp_text,.rigis_img_code,
+.rigis_node_code,.rigis_password,.rigis_inp_Email,.rigis_inp_zhm{
+    height:35px;
+    border:1px solid #cccccc;
+    width:280px;
+    overflow:hidden;
+}
+.rigis_right span{
+    float:left;
+    width:12px;
+    height:21px;
+}
+.rigis_right input{
+    border:0;
+    background:none;
+    width:268px;
+
+    float:left;
+    margin-top:7px;
+}
+
+.rigis_submit{
+    background:#c6c6c6;
+    width:280px;
+    height:50px;
+    line-height:50px;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    display:block;
+}
+.rigis_right_bottom{
+    height:40px;
+    background:#ddd;
+    text-align:center;
+    line-height:40px;
+    color:#414141;
+}
+.isPrompt{
+    color:red;
+}
+.rigis_right .rigis_img_code input{
+    width:180px;
+}
+.img_code{
+    width:88px;
+    height:46px;
+    background:#c6c6c6;
+    float:left;
+}
+.rigis_img_code{
+    float:left;
+}
+.img_code{
+    float:left;
+    width: 88px;
+    height:35px;
+    text-align:center;
+    line-height:35px;
+}
+.rigis_changeCode{
+    display:inline-block;
+    float:left;
+    height:35px;
+    line-height: 50px;
+    text-align:center;
+    width:40px;
+    color:#999;
+}
+.nameCode{
+    background:#c6c6c6;
+    color:#414141;
+    float:left;
+    width:88px;
+    height:35px;
+    line-height:35px;
+    text-align:center;
+}
+.rigis_saveCooike{
+    text-align:right;
+    width:280px;
+}
+/*提示信息的标签的格式*/
+.provingzhm,.provingEmail,.provingFalse,.provingImgCode,
+.provingphoneText,.provingPassword, #provingPassword1{
+    margin-left:50px;
+    color:red;
+    width:282px;
+    height:16px;
+    line-height:16px;
+    clear:both;
+}

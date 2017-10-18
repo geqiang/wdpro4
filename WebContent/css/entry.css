@@ -1,0 +1,91 @@
+#rigisBox{width:100%}
+.rigis{width:1240px; margin:0 auto}
+input{border:none;background:none;outline: 0 none}
+/*----------------------------------登录部分--------------------------------------*/
+#rigisBox{
+    background:url("../images/bigBgtp.jpg") no-repeat;
+    height:675px;
+}
+.rigis{
+    padding-top:55px;
+    padding-left:50px;
+    height:620px;
+}
+.rigis_right{
+    width:380px;
+    min-height:400px;
+    background:#f9f9f9;
+}
+.rigis_right_top,.rigis_inp_text,.rigis_inp_password,.rigis_but_zc,.rigis_sub,.isPrompt{
+    margin: 0 50px;
+}
+.rigis_right_top{
+    height:18px;
+    padding:40px 0;
+    font-size:18px;
+    line-height:18px;
+    text-align:center;
+    background:url("../images/dll.png") no-repeat center center;
+}
+.rigis_inp_text,.rigis_inp_password{
+    height:21px;
+    border:1px solid #cccccc;
+    width:280px;
+    padding:12px 0;
+    margin-bottom: 14px;
+}
+.rigis_inp_text span,.rigis_inp_password span,.rigis_inp_Number span{
+    float:left;
+    width:12px;
+    height:21px;
+    background:url("../images/14682248307391179.png") no-repeat center center;
+    padding:0 12px;
+}
+.rigis_inp_text input,.rigis_inp_password input,.rigis_inp_Number input{
+    border:0;
+    background:none;
+    width:244px;
+    height:21px;
+    float:left;
+}
+.rigis .rigis_inp_password span{
+    background:url("../images/14682248238795325.png") no-repeat center center;
+}
+.rigis_but_zc{
+    height:20px;
+    padding: 5px 0;
+}
+.rigis_but_zc_left{
+    height:20px;
+    float:left;
+    font-size:14px;
+    line-height:20px;
+}
+.rigis_but_zc_right{
+    height:20px;
+    float:right;
+    font-size:14px;
+    line-height:20px;
+}
+.rigis_sub{
+    background:#c6c6c6;
+    width:280px;
+    height:50px;
+    line-height:50px;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    display:block;
+}
+.rigis_right_bottom{
+    height:40px;
+    background:#ddd;
+    text-align:center;
+    line-height:40px;
+    color:#414141;
+}
+.isPrompt{
+    color:red;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一生只送一人</title>
+    <link href="../css/public.css" rel="stylesheet" type="text/css" />
+    <link href="../css/topAndFoot.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/entry.css">
+    <script src="../js/jquery-1.11.3.js"></script>
+    <style type="text/css">
+    	.foot_buttom{
+    	margin-bottom:200px;
+    	}
+    </style>
+    <script>
+    $(document).ready(function(){
+    	$("li a").click(function(){
+    		if($(this).text()=="用户管理"){
+    		 $("#foot").attr("src","../Userservlet");
+    		}else if($(this).text()=="商品管理"){
+    		$("#foot").attr("src","../ProductServlet");			
+    		}else if($(this).text()=="订单管理"){
+    		$("#foot").attr("src","../DingServlet");
+    		}else if($(this).text()=="主页")
+    		$("#foot").attr("src","../index.jsp");
+    	})
+    	
+    	
+    	
+    })	
+    
+    </script>
+</head>
+<body>
+<!--*******************************************Top开始***********************************-->
+<div id="topBox">
+    <div id="top">
+        <div class="top_text">roseonly一生只送一人</div>
+    </div>
+</div>
+<!--*******************************************Top结束***********************************-->
+<!--*******************************************bigLogo开始***********************************-->
+<div id="bigLogoBox">
+    <div id="bigLogo"><a href="../index.jsp"> roseonly.</a></div>
+</div>
+<!--*******************************************bigLogo结束***********************************-->
+<!--*******************************************nav开始***********************************-->
+<div id="navBox">
+    <div id="allNav">
+        <div id="nav">
+            <ul class="fistUl">
+                <li><a>用户管理</a></li>
+                <li><a>商品管理</a></li>
+                <li><a>订单管理</a></li>
+                <li><a>主页</a></li>
+            </ul>
+       
+        </div>
+     
+    </div>
+</div>
+	<iframe src="../ProductServlet" id="foot" width="100%" height="900" >
+ 
+
+
+</body>
+</html>

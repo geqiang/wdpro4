@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.service.CartitemService">
+	<select id="getAll" resultType="Cartitem">
+	select * from cartitem
+	</select>
+	<select id="getCartitemId" parameterType="int" resultType="Cartitem">
+	select * from Cartitem where pid =#{pid};
+	</select>
+	<select id="getCartitemName" parameterType="String" resultType="Cartitem">
+	select * from Cartitem where name =#{name}
+	</select>
+	<insert id="addCartitem" parameterType="cartitem">
+	insert into cartitem(p8,pname,price,name,img1,count,pid) values(#{p8},#{pname},#{price},#{name},#{img1},#{count},#{pid})
+	</insert>
+	<delete id="deleteCartitem" parameterType="int">
+	delete from Cartitem where caid =#{caid}
+	</delete>
+	<delete id="deleteAll" parameterType="cartitem">
+	delete from Cartitem where name =#{name}
+	</delete>
+	<update id="updateCartitem" parameterType="Cartitem">
+	update cartitem set count =#{count} where pid =#{pid}
+	</update>
+
+	
+
+</mapper>

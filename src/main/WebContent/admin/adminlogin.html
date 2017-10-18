@@ -1,0 +1,67 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	input{
+		border:solid 1px;
+	}
+	
+	table{
+		margin: 300px 300px 200px 500px;
+		border: 1px solid;
+	}
+	
+	body{
+		background: pink;
+	}
+</style>
+
+<script type="text/javascript">
+	function checkLogin(){
+		var user = document.loginForm.txtUser;
+		var pass = document.loginForm.psdPass;
+		
+		if(user.value.length < 3){
+			alert("username must be 3+");
+			return false;
+		}
+		
+		if(pass.value.length < 3){
+			alert("password must be 3+");
+			return false;
+		}
+		if(user.value!="admin"){
+			alert("密码错误");
+			return false;
+		}
+		if(pass.value!="admin"){
+			alert("密码错误");
+			return false;
+		}
+		return true;
+	}
+</script>
+</head>
+<body>
+<form method="get" action="admin.html" name="loginForm" onsubmit="return checkLogin()">
+		
+		<table width="30%" height= "100">
+			<tr>
+				<th>username:</th>
+				<td><input name="txtUser" /></td>
+			</tr>
+			<tr>
+				<th>password:</th>
+				<td><input name="psdPass" type="password" /></td>
+			</tr>
+			<tr>
+				<th><input value="reset" type="reset" /></th>
+				<td><input value="submit" type="submit" /></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

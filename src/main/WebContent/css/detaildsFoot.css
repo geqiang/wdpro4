@@ -1,0 +1,51 @@
+#main_buttomBox{width:100%}
+.main_buttom,.carAndExc{width:960px; margin:0 auto}
+
+.main_buttom{
+    height:161px;
+    text-align:center;
+    padding:20px 0;
+}
+.main_buttom img{
+    margin:0 auto;
+}
+.carAndExc{
+    overflow:hidden;
+    margin-bottom:20px;
+}
+hr{
+    width:1240px;
+    margin:0 auto;
+}
+.carAndExc_left,.carAndExc_right{
+    width:314px;
+    height:120px;
+    background:#f0f0f0;
+    padding:78px 80px 50px 80px;
+}
+.carAndExc_left{
+    float:left;
+}
+.carAndExc_right{
+    float:right;
+}
+.carAndExc_left p,.carAndExc_right p{
+    text-align:center;
+}
+.carAndExc_left_p1{
+    font-size:16px;
+    line-height:18px;
+    height:18px;
+}
+.carAndExc_left_p2{
+    font-size:18px;
+    line-height:20px;
+    height:20px;
+    font-weight:bold;
+}
+.carAndExc_left_p3{
+    font-size:18px;
+    line-height:70px;
+    height:70px;
+    font-weight:bold;
+}

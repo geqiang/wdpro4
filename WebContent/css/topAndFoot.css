@@ -1,0 +1,297 @@
+/*自适应宽屏*/
+body{min-height:1000px;}
+#topBox,#bigLogoBox，#navBox,#food_topBox,#foot_centerBox,#foot_buttomBox{width:100%}
+#top,#bigLogo，#nav,#allNav,.foot_top,.foot_center.foot_buttom{width:1240px;margin:0 auto;}
+/*----------------------------top开始-----------------------------*/
+  #topBox{background: #f2f2f2;}
+  #top{
+    min-height: 36px;
+    overflow: hidden;
+}
+     #top .top_child_img{
+      float:left;
+      margin-left:30px;
+      height:36px;
+     }
+     .top_text{
+      float:left;
+      height:36px;
+      line-height:36px;
+      width:240px;
+      text-align: center;
+      font-size:20px;
+      color:#ccc;
+    }
+     #top .top_right{
+      float:right;
+     }
+    #top  .top_right li{
+        float:left;
+        height:24px;
+        padding-top:9px;
+        text-align: center;
+        line-height:18px;
+        width:auto;
+    }
+    .top_right li a{
+        display: block;
+        min-width:50px;
+        text-align: center;
+        line-height:18px;
+        float:left;
+    }
+    .showOrHide{
+        display:none;
+    }
+
+    .top_right li a:hover{
+        color:#f15fba;}
+    .top_right_lastA {
+        width:55px;
+        background:url(../images/gwc_03.gif) no-repeat 1px 0;
+    }
+/*----------------------------top结束-----------------------------*/
+/*----------------------------bigLogo开始-----------------------------*/
+#bigLogo{
+    height:80px;
+    line-height:80px;
+    font-size:45px;
+    color:black;
+    text-align: center;
+    font-family: serif;
+}
+/*----------------------------bigLogo结束----------------------------*/
+/*----------------------------nav开始----------------------------*/
+#navBox{
+    background: #414141;
+    top:0;
+    left:0;
+}
+#allNav{
+    background:#414141;
+    top:0;
+    left:0;
+    width:100%;
+}
+#nav{
+    height:40px;
+    width:1240px;
+    margin:0 auto;
+}
+#nav .fistUl{
+    text-align:center;
+    min-width:1240px;
+    margin:0 auto;
+    }
+#nav .fistUl  li{
+    height:40px;
+    float:left;
+   min-width: 120px;
+    text-align:center;
+
+}
+#nav .fistUl a{
+    color:#fff;
+    font-size:14px;
+    float:left;
+    width:175px;
+    height:40px;
+    line-height:40px;
+}
+#nav ul .changeNavColor{
+    background:#fff;
+    color:black;
+}
+/*------------------在导航栏的登录-----------------*/
+#nav .ulLastLi{
+    float: left;
+	display:none;
+}
+#nav .ulLastLi li{
+    float:left;
+    min-width:50px;
+    background:#414141;
+    text-align:center;
+    padding-top: 5px;
+}
+#nav .ulLastLi a{
+    background:#414141;
+    color:#fff;
+    font-size:14px;
+    min-width:60px;
+    padding:0 4px;
+}
+#nav .ulLastLi a:hover{
+    color:#f15fba;
+}
+#nav .ulLastLi .lastA{
+    padding-left:10px;
+    background: url("../images/gwc2_03.gif") no-repeat 0 -2px;
+}
+/*-------------------------------二级菜单开始-------------------------------*/
+#allNav{
+    min-height:40px;
+    position: relative;
+    z-index:22;}
+/*------------------------鲜花玫瑰的二级菜单----------*/
+.ejcdDiv{overflow:hidden;}
+#navBox .secondNavOne{
+    /*min-height: 320px;*/
+    /*border-bottom:3px solid black;*/
+    height:0;
+    overflow: hidden;
+    padding:24px  0 0 67px;
+    background:#fff;
+    display:none;
+    position:absolute;
+    width:1240px;
+    z-index:9;
+}
+.secondNavOne img{
+    float:right;
+    margin-bottom:30px;
+}
+.secondNavOne ul,.secondNavOne dl{
+    float:left;
+}
+.second_allUl{
+    min-height:70px;
+    min-width:91px;
+    border-right:2px solid black;
+}
+.second_allUl li,.secondNavOne dt,.secondNavOne dd{
+    height:30px;
+    line-height:30px;
+    text-align: center;
+}
+.second_allUl li a{
+    color:black;
+    font-weight: bold;
+    font-size:14px;
+}
+.secondNavOne dt{
+    font-size:14px;
+    font-weight:bold;
+    text-align: left;
+    padding-left:35px;
+}
+.secondNavOne dt a,.secondNavOne dd a{
+    color:black;
+}
+.secondNavOne dd{
+    font-size:14px;
+    text-align: left;
+    padding-left:35px;
+}
+.secondNavOne a:hover{
+    color:#aaa;
+}
+.bgBlackDiv{width:1240px;height:3px;background:black;}
+/*------------------------二级菜单结束----------*/
+/*----------------------------foot开始---------------------------------*/
+  /*---------foot_top部分------------*/
+  .foot_top{
+      min-height:210px;
+      padding-top:90px;
+      overflow:hidden;
+  }
+    .foot_top_left{
+      min-width:190px;
+      min-height:130px;
+        float:left;
+    }
+        .foot_top_left p{
+            width:190px;
+            font-family:serif;
+            font-size:40px;
+            line-height:40px;
+            margin-bottom:30px;
+        }
+        .foot_top_left div span{
+            font-size:18px;
+            display: inline-block;
+            height:34px;
+            line-height:34px;
+            float:left;
+        }
+        .foot_top_left img{
+            height:34px;
+            float:left;
+            padding:0 6px;
+        }
+        .foot_top_left div{
+            height:34px;
+        }
+    .foot_top_center{
+        min-width:66px;
+        float:left;
+    }
+    .foot_top_center dl{
+        padding:0 75px;
+        float:left;
+        border-right:1px solid #ebebeb;
+    }
+    .foot_top_center dl:last-child{
+        border:none;
+    }
+    .foot_top_center dt{
+        font-size:18px;
+        margin-bottom:22px;
+        font-weight:bold;
+        text-align:center;
+        line-height:18px;
+    }
+    .foot_top_center dd{
+        height:30px;
+        text-align:center;
+    }
+    .foot_top_center dd a{
+        line-height:30px;
+        font-size:16px;
+    }
+.foot_top_center dd a:hover{
+    font-weight: bold;
+    color:black;
+}
+    .foot_top_center img{
+        float:right;
+    }
+    .foot_top>img{
+        position:fixed;
+        top:20%;
+        left:32%;
+        display:none;
+    }
+    /*---------foot_center部分------------*/
+#foot_centerBox{
+    background:#f2f2f2;
+    height:44px;
+}
+  .foot_center{
+      height:44px;
+      text-align: center;
+  }
+    /*---------foot_center部分------------*/
+#foot_buttomBox,.foot_buttom
+    {
+    background:#414141;
+    min-height:45px;
+    }
+    .foot_buttom{
+        text-align:center;
+        font-size:14px;
+        color:#fff;
+        line-height:45px;
+    }
+    #toTop,#toNews{
+        width:47px;
+        height:47px;
+        position: fixed;
+        right:0;
+		z-index:30;
+    #toTop{
+        top:70%
+    }
+    #toNews{
+        top:78%
+    }

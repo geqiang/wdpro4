@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.service.ProductService">
+
+	<select id="getProduct" resultMap="ProductMap">
+	select pid,pname,categoryId,price,kuchun,color,p6,cname,descr,p8,img1,img2,img3,img4,img5,p7 
+	from Product,Category where Category.cid = Product.categoryId
+	</select>
+	<resultMap type="Product" id="ProductMap">
+	<id column="pid" property="pid"/>
+	<result column="pname" property="pname"/>
+	<result column="categoryId" property="category"/>
+	<result column="price" property="price"/>
+	<result column="kuchun" property="kuchun"/>
+	<result column="color" property="color"/>
+	<result column="p6" property="p6"/>
+	<result column="descr" property="descr"/>
+	<result column="p8" property="p8"/>
+	<result column="img1" property="img1"/>
+	<result column="img2" property="img2"/>
+	<result column="img3" property="img3"/>
+	<result column="img4" property="img4"/>
+	<result column="img5" property="img5"/>
+	<result column="p7" property="p7"/>
+	<association property="cate" column="cid" javaType="Category">
+	<id column="cid" property="cid"/>
+	<result column="cname" property="cname"/>
+	</association>
+	</resultMap>
+	<select id="getProductId" parameterType="int" resultMap="ProductIdMap">
+	select * from Product,Category where Category.cid = Product.categoryId and pid = #{pid}
+	</select>
+	<resultMap type="Product" id="ProductIdMap">
+	<id column="pid" property="pid"/>
+	<result column="pname" property="pname"/>
+	<result column="categoryId" property="category"/>
+	<result column="price" property="price"/>
+	<result column="kuchun" property="kuchun"/>
+	<result column="color" property="color"/>
+	<result column="p6" property="p6"/>
+	<result column="descr" property="descr"/>
+	<result column="p8" property="p8"/>
+	<result column="img1" property="img1"/>
+	<result column="img2" property="img2"/>
+	<result column="img3" property="img3"/>
+	<result column="img4" property="img4"/>
+	<result column="img5" property="img5"/>
+	<result column="p7" property="p7"/>
+	<association property="cate" column="cid" javaType="Category">
+	<id column="cid" property="cid"/>
+	<result column="cname" property="cname"/>
+	</association>
+	</resultMap>
+	<update id="updateProduct" parameterType="product" >
+	update Product set pname =#{pname}, price =#{price},descr =#{descr},kuchun =#{kuchun},color =#{color},p6=#{p6},categoryId= #{category},p8= #{p8} where pid =#{pid}
+	</update>
+	<insert id="addProduct" parameterType="product">
+	insert into Product(pname,price,p8,descr,kuchun,color,categoryId,img1,img2,img3,img4,img5,p7,p6) 
+	values(#{pname},#{price},#{p8},#{descr},#{kuchun},#{color},#{category},#{img1},#{img2},#{img3},#{img4},#{img5},#{p7},#{p6})
+	</insert>
+	<delete id="deleteProduct" parameterType="int">
+	delete from Product where Pid =#{pid}
+	</delete>
+	<delete id="delete2Product" parameterType="int">
+	delete from Product where pid =#{pid}
+	</delete>
+</mapper>

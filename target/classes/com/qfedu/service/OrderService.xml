@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qfedu.service.OrderService">
+	<select id="getOrder" resultType="OrderCartitem">
+	select * from ordered
+	</select>
+	<select id="getOrderId" parameterType="int" resultType="OrderCartitem">
+	select * from ordered where oid = #{oid}
+	</select>
+	<select id="getremai" resultType="OrderCartitem">
+	select * from ordered order by o3 desc limit 12
+	</select>
+	<insert id="addOrder" parameterType="OrderCartitem">
+	insert into ordered(oname,otele,addr,pid,o1,o2,o3,time,status,name,poset,prices) values(#{oname},#{otele},#{addr},#{pid},#{o1},#{o2},#{o3},#{time},#{status},#{name},#{poset},#{prices})
+	</insert>
+	<update id="updateOrder" parameterType="Cartitem">
+	update ordered set prices =#{prices}, oname =#{oname},otele =#{otele},addr =#{addr},poset =#{poset},status=#{status} where oid =#{oid}
+	</update>
+	
+
+</mapper>

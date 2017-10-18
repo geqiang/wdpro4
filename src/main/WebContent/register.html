@@ -1,0 +1,361 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>一生只送一人</title>
+    <link href="css/public.css" rel="stylesheet" type="text/css" />
+    <link href="css/topAndFoot.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/register.css">
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/topAndFoot.js"></script>
+    <script src="js/register.js"></script>
+    <script src="js/istrueEntry.js"></script>
+  <script>
+    	$(document).ready(function(){
+    		$("#pass2").blur(function(){
+    		
+    				if($(this).val()==$("#pass1").val()){
+    					$(".provingPassword1").html("");
+    				}else{
+    					$("#provingPassword1").html("两次密码不一致，请重新输入");
+    				}   			
+    		})
+   		
+    	})
+    	
+    	function login_check(){  
+   			 if(document.getElementById("uid").value == ""){  
+        		alert("用户名不能为空！");  
+        			return false;  
+    }  
+    		if(document.getElementById("pass1").value == ""){  
+        		alert("密码不能为空！");  
+        			return false;  
+    }  
+    		if(document.getElementById("mail").value == ""){  
+        		alert("邮箱不能为空！");  
+        			return false;  
+    } 
+    		if(document.getElementById("tele").value == ""){  
+        		alert("手机号码不能为空！");  
+        			return false;  
+    }
+    		if(document.getElementById("yanzhengma").value == ""){  
+        		alert("验证码不能为空！");  
+        			return false;  
+    } 
+    		
+    return true;  
+}  
+    </script>
+</head>
+<body>
+<!--*******************************************Top开始***********************************-->
+<div id="topBox">
+    <div id="top">
+        <img class="top_child_img" src="images/logo_03.gif"/>
+        <div class="top_text">roseonly一生只送一人</div>
+        <ul class="top_right">
+            <li class="entry"><a href="entry.html">登录</a><a href="register.html">注册</a></li>
+            <li class="successEntry showOrHide">
+                <a href="javascript:;">欢迎您</a>
+                <a class="havaName" href="#"></a>
+                <a class="cancel" href="javascript:;">注销</a>
+            </li>
+            <li><a href="GouwucheServlet?op=select" class="top_right_lastA">(<span>0</span>)</a> </li>
+        </ul>
+    </div>
+</div>
+<!--*******************************************Top结束***********************************-->
+<!--*******************************************bigLogo开始***********************************-->
+<div id="bigLogoBox">
+    <div id="bigLogo"><a href="index.jsp"> roseonly.</a></div>
+</div>
+<!--*******************************************bigLogo结束***********************************-->
+<!--*******************************************nav开始***********************************-->
+<div id="navBox">
+    <div id="allNav">
+        <div id="nav">
+            <ul class="fistUl">
+                <li><a href="flowRose.html">鲜花玫瑰</a></li>
+                <li><a href="yongshengRose.html">永生玫瑰</a></li>
+                <li><a href="roseOrb.html">玫瑰珠宝</a></li>
+                <li><a href="birthday.html">生日推荐</a></li>
+                <li><a href="#">love&nbsp;roseonly</a></li>
+                <li><a href="#">诺誓世界</a></li>
+                <li><a href="#">专卖店</a></li>
+            </ul>
+            <ul class="ulLastLi">
+                <li class="entry"><a href="entry.html">登录</a><a href="register.html">注册</a></li>
+                <li class="successEntry showOrHide">
+                    <a href="javascript:;">欢迎您</a>
+                    <a class="havaName" href="#"></a>
+                    <a class="cancel" href="javascript:;">注销</a>
+                </li>
+                <li> <a href="shoppingCart.html" class="lastA">（<span>0</span>）</a></li>
+            </ul>
+        </div>
+        <!--*********************************二级菜单开始**************************-->
+        <div class="ejcdDiv">
+                <!--*****************二级菜单第一个*******************-->
+            <div class="secondNavOne">
+                <ul class="second_allUl">
+                    <li><a href="#">玫瑰长盒</a></li>
+                    <li><a href="#">玫瑰手捧</a></li>
+                </ul>
+                <dl>
+                    <dt><a href="#">系列</a></dt>
+                    <dd><a href="#">经典持续</a></dd>
+                    <dd><a href="#">恒久真爱</a></dd>
+                    <dd><a href="#">LINE FRIENDS 专属</a></dd>
+                    <dd><a href="#">爱在满怀</a></dd>
+                    <dd><a href="#">星座经典</a></dd>
+                    <dd><a href="#">love&nbsp;oseonly</a></dd>
+                </dl>
+                <a href="#"><img src="images/ejcdOne.jpg"/></a>
+
+            </div>
+            <!--*****************二级菜单第二个*******************-->
+            <div class="secondNavOne secondNavTwo">
+                <ul class="second_allUl">
+                    <li><a href="#">音乐玫瑰</a></li>
+                    <li><a href="#">玫瑰原盒</a></li>
+                    <li><a href="#">玫瑰方盒</a></li>
+                    <li><a href="#">玫瑰心形盒</a></li>
+                    <li><a href="#">玫瑰长盒</a></li>
+                </ul>
+                <dl>
+                    <dt><a href="#">系列</a></dt>
+                    <dd><a href="#">星座经典</a></dd>
+                    <dd><a href="#">为爱而生</a></dd>
+                    <dd><a href="#">经典持续</a></dd>
+                    <dd><a href="#">满满的爱</a></dd>
+                    <dd><a href="#">love&nbsp;oseonly</a></dd>
+                </dl>
+                <dl>
+                    <dt> </dt>
+                    <dd><a href="#">全世爱</a></dd>
+                    <dd><a href="#">甜蜜心动</a></dd>
+                    <dd><a href="#">一生一世</a></dd>
+                    <dd><a href="#">诗意童话</a></dd>
+                </dl>
+                <a href="#"><img src="images/ejcdTow.jpg"/></a>
+            </div>
+            <!--****************二级菜单*第三个*******************-->
+            <div class="secondNavOne secondNavThree">
+                <ul class="second_allUl">
+                    <li><a href="#">项链</a></li>
+                    <li><a href="#">手链</a></li>
+                    <li><a href="#">首饰</a></li>
+                    <li><a href="#">对戒</a></li>
+                    <li><a href="#">套装</a></li>
+                </ul>
+                <dl>
+                    <dt><a href="#">玫瑰宝珠</a></dt>
+                    <dd><a href="#">玫瑰经典</a></dd>
+                    <dd><a href="#">星座经典</a></dd>
+                    <dd><a href="#">生辰石</a></dd>
+                    <dd><a href="#">恒久经典</a></dd>
+                    <dd><a href="#">全心全意</a></dd>
+                    <dd><a href="#">时光无痕</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">玫瑰饰品</a> </dt>
+                    <dd><a href="#">幸运精灵</a></dd>
+                    <dd><a href="#">时光之吻</a></dd>
+                    <dd><a href="#">爱之赞礼</a></dd>
+                    <dd><a href="#">全心全意</a></dd>
+                    <dd><a href="#">心心相印</a></dd>
+                    <dd><a href="#">love&nbsp;oseonly</a></dd>
+                </dl>
+                <a href="#"><img src="images/ejcdThree.jpg"/></a>
+            </div>
+            <!--****************二级菜单*第四个*******************-->
+            <div class="secondNavOne secondNavFour">
+                <ul class="second_allUl">
+                    <li><a href="#">音乐玫瑰</a></li>
+                    <li><a href="#">永生玫瑰</a></li>
+                    <li><a href="#">鲜花玫瑰</a></li>
+                    <li><a href="#">生辰石</a></li>
+                    <li><a href="#">十二生肖</a></li>
+                    <li><a href="#">礼品</a></li>
+                    <li><a href="#">男士礼品</a></li>
+                    <li><a href="#">送亲人朋友</a></li>
+                </ul>
+                <dl>
+                    <dt><a href="#">当月星座</a></dt>
+                    <dd><a href="#">天枰座</a></dd>
+                    <dd><a href="#">水瓶座</a></dd>
+                    <dd><a href="#">射手座</a></dd>
+                    <dd><a href="#">水瓶座</a></dd>
+                    <dd><a href="#">白羊座</a></dd>
+                    <dd><a href="#">双子座</a></dd>
+                    <dd><a href="#">狮子座</a></dd>
+                </dl>
+                <dl>
+                    <dt></dt>
+                    <dd><a href="#">天蝎座</a></dd>
+                    <dd><a href="#">摩羯座</a></dd>
+                    <dd><a href="#">双鱼座</a></dd>
+                    <dd><a href="#">金牛座</a></dd>
+                    <dd><a href="#">巨蟹座</a></dd>
+                    <dd><a href="#">处女座</a></dd>
+                </dl>
+                <a href="#"><img src="images/ejcdFour.jpg"/></a>
+            </div>
+            <!--*****************二级菜单第五个*******************-->
+            <div class="secondNavOne secondNavFive">
+                <ul class="second_allUl">
+                    <li><a href="#">鲜花</a></li>
+                    <li><a href="#">精选长盒</a></li>
+                </ul>
+                <dl>
+                    <dt><a href="#">永生花</a></dt>
+                    <dd><a href="#">方盒</a></dd>
+                    <dd><a href="#">圆盒</a></dd>
+                    <dd><a href="#">六角盒</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">饰品</a></dt>
+                    <dd><a href="#">项链</a></dd>
+                    <dd><a href="#">手链</a></dd>
+                    <dd><a href="#">耳饰</a></dd>
+                </dl>
+                <a href="#"><img src="images/ejcdFive.jpg"/></a>
+            </div>
+            <!--*****************二级菜单第六个*******************-->
+            <div class="secondNavOne secondNavFive">
+                <ul class="second_allUl">
+                    <li><a href="#">品牌故事</a></li>
+                    <li><a href="#">产品故事</a></li>
+                    <li><a href="#">明星时刻</a></li>
+                    <li><a href="#">真爱见证</a></li>
+                    <li><a href="#">活动咨询</a></li>
+                    <li><a href="#">诺誓百科</a></li>
+                </ul>
+                <dl>
+                    <dt><a href="#">节日百科</a></dt>
+                    <dd><a href="#">母亲节百科</a></dd>
+                    <dd><a href="#">520百科</a></dd>
+                    <dd><a href="#">圣诞节百科</a></dd>
+                </dl>
+                <a href="#"><img src="images/ejcdSix.jpg"/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--*********************************二级菜单结束**************************-->
+<!--****************************登录部分开始*********************************-->
+<div id="rigisBox">
+    <div class="rigis">
+    <div class="rigis_right">
+        <p class="rigis_right_top">注册</p>
+        <form action="Userservlet" method="get" onsubmit = "return login_check()">
+           <input type="hidden" name="op" value="zhuche">
+            <div class="rigis_inp_zhm">
+                <span></span>
+                <input name="uid" id="uid" type="text" placeholder="请输入账号名" title="账号名只能由应为6~16字母组成" value="geqiang"/>
+            </div>
+            <p class="provingzhm" ></p>
+            <div class="rigis_inp_Email">
+                <span></span>
+                <input name="mail" id="mail" type="text" placeholder="请输邮箱"  value="1234123@163.com" />
+            </div>
+            <p class="provingEmail" ></p>
+        <div class="rigis_inp_text">
+            <span></span>
+             <input name="tele" id="tele" type="text" placeholder="请输入手机号码" value="15653877621" />
+        </div>
+         <p class="provingFalse" ></p>
+        <div class="rigis_password">
+            <span></span>
+            <input name="pass1" id =pass1 type="password" placeholder="6-16位数字或字母" title="只能由英文字母组成"  value="qwerty"/>
+        </div>
+         <p class="provingPassword"></p>
+        <div class="rigis_password ">
+            <span></span>
+            <input id="pass2" type="password" placeholder="6-16位数字或字母" title="只能由英文字母组成"  value="qwerty"/>
+        </div>
+         <p id="provingPassword1" style="margin-left:50px;
+    color:red;
+    width:282px;
+    height:16px;
+    line-height:16px;
+    clear:both;"></p>
+        <div class="rigis_img_code">
+            <span></span>
+            <input  id= "yanzhengma" type="text" placeholder="图片验证码" />
+            <a href="javascript:;" class="img_code"></a>
+        </div>
+            <p class="rigis_changeCode">换一张</p>
+        <p class="provingImgCode"></p>
+        <p class="provingphoneText"></p>
+ 
+         <p class="rigis_saveCooike"><a href="#">已有账号</a></p>
+          <p class="rigis_submit"><input type="submit" value="创建账号" style="background: #c6c6c6;
+    width: 280px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    display: block;"/></p>
+        </from>
+        <p class="rigis_right_bottom">roseonly支持门店城市当日送达服务</p>
+    </div>
+    </div>
+</div>
+
+<!--******************************底部******************************************-->
+<div id="food_topBox">
+    <div class="foot_top">
+        <div class="foot_top_left">
+            <p>.roseonly</p>
+            <div>
+                <span>关注我们</span>
+                <a href="#"><img src="images/xlwb.png" /></a>
+                <img src="images/wxtb.png" />
+            </div>
+        </div>
+        <div class="foot_top_center">
+            <dl>
+                <dt>新手指南</dt>
+                <dd><a href="#">购物流程</a></dd>
+                <dd><a href="#">支付方式</a></dd>
+                <dd><a href="#">常见问题</a></dd>
+            </dl>
+            <dl>
+                <dt>售后服务</dt>
+                <dd><a href="#">退款说明</a></dd>
+                <dd><a href="#">保养物语</a></dd>
+            </dl>
+            <dl>
+                <dt>物流配送</dt>
+                <dd><a href="#">配送方式</a></dd>
+                <dd><a href="#">配送服务</a></dd>
+            </dl>
+            <dl>
+                <dt>关于我们</dt>
+                <dd><a href="#">联系我们</a></dd>
+                <dd><a href="#">加入我们</a></dd>
+            </dl>
+        </div>
+        <div class="foot_top_right">
+            <img src="images/foodTopRight.jpg" />
+        </div>
+        <img src="images/QR-big.jpg" title="这是微信二维码图" />
+    </div>
+</div>
+<div id="foot_centerBox">
+    <div class="foot_center">
+        <img src="images/phone.jpg"/>
+    </div>
+</div>
+<div id="foot_buttomBox">
+    <div class="foot_buttom">
+        京ICP备13007738号 京公网安备11010502023922 www.roseonly.com.cn；诺誓（北京）商业股份有限公司
+    </div>
+</div>
+</body>
+</html>

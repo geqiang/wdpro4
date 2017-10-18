@@ -1,0 +1,293 @@
+#bannerBox,#newShop,#hotShopBox，#navShopShowBox,#guilbBox{width:100%}
+.banner,.news_release,.hotShop,.navShop,.navShop_center,.guilb{width:1240px; margin:0 auto;}
+/*--------------------------------banner开始------------------------*/
+    .banner{
+        position:relative;
+        overflow:hidden;
+        height:450px;
+    }
+      .banner_image a{
+          overflow: hidden;
+      }
+      .banner_image img{
+            position:absolute;
+            opacity:0;
+      }
+        .banner_image .firstImg{
+            opacity:1;
+        }
+      .banner_tb{
+          position:absolute;
+          z-index:15;
+          height:20px;
+          bottom: 5px;
+          left:41%
+      }
+       .banner_tb span{
+           width:10px;
+           height:10px;
+           border:3px solid #ccc;
+           float:left;
+           border-radius:10px;
+           margin:3px 10px;
+           background:rgba(200,200,200,0.3);
+        }
+        #bannerBox  .spanAddBgC{
+             background:#444;
+        }
+        .banner_left,.banner_right{
+            position:absolute;
+            top:185px;
+            background:rgba(0,0,0,0.4);
+            height:64px;
+            width:40px;
+            overflow:hidden;
+            display: none;
+        }
+        .banner_left img,.banner_right img{
+            width:40px;
+            height:64px;
+        }
+        .banner_left{
+            left:0;
+        }
+        .banner_right{
+            right:0;
+        }
+/*--------------------------------banner结束------------------------*/
+/*--------------------------------新品热卖部分开始------------------------*/
+    .news_release{
+        height:332px;
+        padding-top:24px;
+    }
+    .news_release_conDl{
+        overflow: hidden;
+    }
+    .news_release dl{
+        width:290px;
+        min-height:330px;
+        overflow:hidden;
+        padding:0 10px;
+        float:left;
+
+    }
+    .news_release dt{
+        width:288px;
+        height:280px;
+        position:relative;
+    }
+    .news_release .news_release_firstDl{
+
+    }
+    .news_release dd{
+        height:50px;
+        text-align:center;
+        font-size:22px;
+        line-height:50px;
+        font-weight:bold;
+    }
+    .news_release .news_release_bga{
+        height:0;
+        width:0;
+        overflow:hidden;
+        font-size:20px;
+        line-height:280px;
+        position:absolute;
+        background:rgba(255,255,255,0.3);
+        top:140px;
+        left:144px;
+        text-align:center;
+    }
+    /*------------------------------热卖单品展示开始-------------------------------*/
+   .hotShop{
+       width:990px;
+       min-height:712px;
+       padding: 0 125px;
+    }
+      .hotShop_show_top{
+          padding-top:40px;
+          min-height:80px;
+          font-size:24px;
+          line-height:82px;
+          text-align:center;
+      }
+      .hotShop_show_cen{
+          height:52px;
+          border-top:1px solid #ccc;
+      }
+      .hotShop_show_cen li{
+          float:left;
+          padding-top:16px;
+          height:36px;
+          text-align:center;
+           width:auto;
+          border-bottom:1px solid black;
+      }
+      .hotShop_show_cen li span{
+            padding:0 90px;
+          text-align:center;
+          border-left: 1px solid #999;
+          font-size:16px;
+      }
+      .hotShop_show_cen li .hotShopFirst{
+          border-left:none;
+      }
+      /*-------------------------------------页签和轮播-------------------------------------*/
+      .hotShop_show_but{
+          min-height:690px;
+          overflow:hidden;
+          width:990px;
+          position:relative;
+      }
+      .hotShop_show_butBox{
+          width:9999px;
+          min-height:690px;
+          position:absolute;
+      }
+      .hotShop_show_butOne{
+
+          float:left;
+          width:990px;
+          height:684px;
+      }
+      .hotShop_dl{
+          width:245px;
+          height:340px;
+          float:left;
+          border:1px solid #ccc;
+          border-top:none;
+          overflow:hidden;
+          position:relative;
+      }
+      .hotShop_dl_dt{
+        width:243px;
+        height:auto;
+          overflow:hidden;
+      }
+      .hotShop_dl_dt img{
+          width:248px;
+          height:238px;
+      }
+      .hotShop_dl_firdd{
+          font-size:16px;
+          height:26px;
+          font-weight:bold;
+          text-align:center;
+      }
+      .hotShop_dl_secdd{
+          height:24px;
+          text-align:center;
+      }
+      .hotShop_dl_tridd{
+          height:44px;
+          font-size:16px;
+          font-wight:bold;
+          line-height:32px;
+          text-align:center;
+      }
+   .hotShop .changeBorder{
+                  border-left:1px solid black;
+                  border-right:1px solid black;
+                  border-top:2px solid black;
+                  border-bottom:none;
+              }
+    .hotShop .changeDlBgC{
+        background:#ebebeb;
+    }
+/*---------------------------------------热品展示----------------------------------------*/
+  .navShop{
+      min-height:2430px;
+      border-bottom:2px solid #e6e6e6;
+  }
+  .navShop_one{
+      padding-top:25px;
+      overflow: hidden;
+  }
+  .navShop_top{
+      overflow:hidden;
+  }
+  .navShop_top_left{
+      height:64px;
+      width:auto;
+      float:left;
+  }
+  .navShop_top_left span{
+      line-height:64px;
+      font-size:22px;
+      padding-left:8px;
+      padding-right:8px;
+  }
+  .navShop_top_left span:first-child{
+      border-right:2px solid black;
+  }
+  .navShop_top_right{
+      height:64px;
+      float:right;
+      font-size:22px;
+      line-height:64px;
+      padding-right: 15px;
+      background:url(../images/jttb_03.gif) no-repeat center right;
+  }
+  .navShop_top_right a:hover{
+      color:#f15fba;
+      font-weight:bold;
+  }
+  .navShop_center{
+      height:500px;
+  }
+  .navShop_center ul{
+      height:500px;
+  }
+  .navShop_center li{
+      float:left;
+      position:relative;
+  }
+.smallImg{
+    margin-left:25px;
+    margin-bottom:21px;
+    position:relative;
+    width:365px;
+    height:235px;
+    bottom:-10px;
+}
+.bigImg{
+    width:450px;
+    height:500px;
+    position:relative;
+}
+.navShop_center .changeYinYing{
+    box-shadow:0 0 10px #888;
+}
+.img_bga{
+    display:none;
+    background:rgba(117,112,223,0.2);
+    position:absolute;
+    bottom:0;
+    left:0;
+    text-align:center;
+}
+.bigImg_bga{
+    width:450px;
+    height:150px;
+    line-height:150px;
+}
+.small_bga{
+    width:365px;
+    height:85px;
+    line-height:85px;
+}
+
+/*-------------------------------实体店诺言世界-------------------------------*/
+.guilb{
+    padding-top:43px;
+    height:200px;
+}
+.guilb_left{
+    float:left;
+}
+.guilb_right{
+    float:right;
+}
+
+
+

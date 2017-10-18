@@ -1,0 +1,97 @@
+#bigLogoImgbox,#showShopBox{width:100%}
+.bigLogoImg,.tool,.showShop{width:1240px;margin:0 auto;}
+/*------------------------------------------------------------*/
+.bigLogoImg{
+    padding:12px 0;
+}
+.tool{
+    padding-top:7px;
+    height:35px;
+    border-bottom:1px solid black;
+}
+.toolLeft{
+   width:auto;
+}
+.toolLeft li{
+    float:left;
+    width:60px;
+    height:35px;
+    font-size:14px;
+    line-height:35px;
+    margin:0 35px;
+    text-align:center;
+}
+.toolLeft_lastLi{
+    background:url(../images/sxjt_07.gif) no-repeat right center;
+}
+.toolRight{
+    height:30px;
+    width:200px;
+    float:left;
+    border:1px solid black;
+}
+.textInp{
+    float:left;
+    width:179px;
+    height:30px;
+    font-size:18px;
+    border:none;
+    background:none;
+}
+.addAndCut{
+    float:left;
+    width:16px;
+}
+.addAndCut input{
+    display:block;
+    padding:0;
+    margin:0;
+    height:15px;
+    line-height:10px;
+}
+.tool p{
+    height:30px;
+    width:12px;
+    text-align:center;
+    line-height:30px;
+    padding:0 5px;
+    float:left;
+}
+/*点击li换字体颜色和背景色*/
+.addLiBga{
+    background:black;
+    color:#fff;
+}
+/*内容部分获取*/
+.showShop{
+    min-height:1200px;
+}
+.showShop dl{
+    width:300px;
+    height:400px;
+    float:left;
+}
+.showShop dt{
+    width:300px;
+    height:300px;
+    overflow:hidden;
+}
+.showShop dl img{
+    width:300px;
+    height:300px;
+    position:relative;
+}
+.showShop dd{
+    font-size:14px;
+    font-weight:bold;
+    text-align:center;
+    height:32px;
+    line-height:32px;
+}
+.showShop dd a{
+    color:black;
+}
+/*动态改变背景颜色*/
+.showShopBgC{
+    background:#cccccc;
+}

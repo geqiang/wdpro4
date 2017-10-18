@@ -1,0 +1,204 @@
+#itemShowBox,#{width:100%}
+.itemShow,.main{width:960px; margin:0 auto;}
+
+/*购买的左边部分内容*/
+#itemShowBox{
+    height:464px;
+}
+.itemShow{
+    height:400px;
+    padding:32px 0;
+}
+.itemShow_left{
+    width:165px;
+    height:369px;
+    padding:95px 0 0 85px;
+    float:left;
+}
+.itemShow_left dl{
+    width:195px;
+    text-align:center;
+}
+.itemShow_left dt{
+    width:52px;
+    height:54px;
+    background:url("../images/tld_03.jpg");
+    margin-left:30px;
+    margin-bottom:20px;
+}
+.itemShow_left dl dd{
+    width:195px;
+    text-align:center;
+}
+.itemShow_left_left,.itemShow_left_right{
+    width:6px;
+    height:30px;
+    display:inline-block;
+}
+.itemShow_left_left{
+    background: url("../images/lb_02.png") no-repeat;
+}
+.itemShow_left_right{
+    background: url("../images/lb_03.png") no-repeat ;
+
+
+}
+.itemShow_left span{
+    float:left;
+    font-size:26px;
+    color: #941b1e;
+    line-height:30px;
+    font-weight:bold;
+}
+.itemShow_center{
+    width:400px;
+    float:left;
+    position: relative;
+}
+/*商品右侧栏部分*/
+.itemShow_right{
+    float:left;
+    padding-left:15px;
+    width:270px;
+    height:386px;
+}
+.itemShow_right_p1{
+    height:18px;
+    font-size:18px;
+    line-height:18px;
+    margin-bottom:5px;
+}
+.itemShow_right_p2{
+    color:#83847e;
+    margin-bottom:25px;
+}
+.itemShow_right_money{
+    height:45px;
+    border-top:1px solid #e6e6e6;
+    border-bottom:1px solid #e6e6e6;
+    font-size:22px;
+    line-height:45px;
+}
+.itemShow_right_color{
+    padding-top:25px;
+    height:25px;
+}
+.itemShow_right_color p{
+    float:left;
+    width:60px;
+}
+.itemShow_right_color span{
+    float:left;
+    width:15px;
+    height:15px;
+    border:1px solid black;
+    margin:0 3px;
+}
+.itemShow_right_num{
+    height:20px;
+    margin-top:20px;
+}
+.itemShow_right_num p,.itemShow_right_num span{
+    float:left;
+}
+.itemShow_right_nump1{
+    height:20px;
+    line-height:20px;
+    width:60px;
+    text-align:center;
+    margin-right:5px;
+}
+.itemShow_right_nump2{
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+}
+.itemShow_right_num  span{
+    width:20px;
+    height:20px;
+    line-height:20px;
+    text-align:center;
+    border:1px solid black;
+}
+.itemShow_right_by{
+    height:32px;
+    margin-top:30px;
+}
+.itemShow_right_by p{
+    float:left;
+	/* width:100px; */
+    height:32px;
+    line-height:30px;
+    text-align:center;
+    font-size:16px;
+    /*border:2px solid black;*/
+    margin-right:25px;
+}
+.itemShow_right_nowby{
+    color:black;
+    background:#414141;
+}
+.itemShow_right_waitby{
+    color:#000;
+}
+.itemShow_right_smallImg{
+    height:42px;
+    padding: 0 20px;
+    margin-top:60px;
+}
+.itemShow_right_smallImg img{
+    float:left;
+    height:42px;
+    width:42px;
+}
+
+.changeImgStyle{
+    border:2px solid #83847e;
+}
+/*放大镜效果的css*/
+
+.small-wrapper {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+.small-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+.small-wrapper .filter {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: rgba(240,240,240,0.6);
+    cursor: move;
+}
+.large-wrapper {
+    display: none;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 410px;
+    width: 400px;
+    height: 400px;
+    background:#fff;
+}
+.large-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 300%;
+}
+.main{
+   min-height:3600px;
+}
+.main_top{
+    height:58px;
+}
+
+
